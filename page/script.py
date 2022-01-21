@@ -9,8 +9,8 @@ st.text_input("Insira o primeiro local", key="loc1")
 st.text_input("Insira o segundo local", key="loc2")
 
 
-data1 = st.session_state.loc1 
-data2 = st.session_state.loc2 
+data1 = st.session_state.loc1 #'R Doutor José Maria 804'
+data2 = st.session_state.loc2 #'Pátio de São Pedro'
 
 
 with open('./data/capdist.csv', 'r', encoding='utf-8') as arquivo:
@@ -30,7 +30,7 @@ for i in city:
     else:
         tmp.append(i)
         
-
+#Armando o dicionário
 dic = {}    
 for i in f:
     a = i.split(',')
@@ -40,7 +40,7 @@ for i in f:
     a = i.split(',')
     dic[a[0]][a[2]] = int(a[4])
 
-
+#Encontrar pais pelo index
 def findCountry(country):
     with open('./data/index.csv', 'r') as arquivo:
         for i in arquivo:
@@ -93,6 +93,13 @@ else:
                 break
         path.insert(0,src)
         if shortest_distance[dest] != inf:
+            # print('Menor distancia ' + str(shortest_distance[dest]))
+            # print('Caminho ')
+            # string = ''
+            # for i in range(len(path)):
+            #     var = findCountry(path[i])
+            #     string += var 
+
             return path, shortest_distance[dest]
 
 

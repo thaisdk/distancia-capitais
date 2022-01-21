@@ -10,8 +10,8 @@ st.text_input("Insira outro local", key="loc2")
 print(st.session_state.loc1)
 print(st.session_state.loc2)
 
-data1 = st.session_state.loc1
-data2 = st.session_state.loc2 
+data1 = st.session_state.loc1 #'R Doutor José Maria 804'
+data2 = st.session_state.loc2 #'Pátio de São Pedro'
 
 if(data1 and data2):
     dist = gmaps.distance_matrix(data1, data2)['rows'][0]['elements'][0]
