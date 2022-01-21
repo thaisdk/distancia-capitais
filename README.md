@@ -9,6 +9,10 @@
    
   ## 🎨 Design:
   
-  Design criado no Streamlit.
+  Design criado usando o framework open-soruce Streamlit.
+  
+  ![alt text](https://github.com/thaisdk/distancia-capitais/blob/main/imagens/streamlit.png?raw=true)
+  
+ 
     
     
