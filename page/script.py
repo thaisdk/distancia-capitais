@@ -1,9 +1,9 @@
 import streamlit as st
 import numpy as np
 
-st.set_page_config(page_title="5AA - Algoritmo")
+st.set_page_config(page_title="Distância entre capitais de países")
 
-st.title('Distância entre países e suas respectivas capitais.')
+st.title('Distância entre capitais de países')
 
 st.text_input("Insira o primeiro local", key="loc1")
 st.text_input("Insira o segundo local", key="loc2")
@@ -13,8 +13,9 @@ data1 = st.session_state.loc1 #'R Doutor José Maria 804'
 data2 = st.session_state.loc2 #'Pátio de São Pedro'
 
 
-with open('./data/capdist.csv', 'r', encoding='utf-8') as arquivo:
+with open('./data/capitaisdist.csv', 'r', encoding='utf-8') as arquivo:
     f = arquivo.readlines()
+
 city = []
 count = 0
 for i in f:
