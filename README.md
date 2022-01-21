@@ -13,6 +13,7 @@
   
   ![alt text](https://github.com/thaisdk/distancia-capitais/blob/main/imagens/streamlit.png?raw=true)
   
+  
  
     
     
