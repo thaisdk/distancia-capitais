@@ -13,7 +13,7 @@ data1 = st.session_state.loc1 #'R Doutor José Maria 804'
 data2 = st.session_state.loc2 #'Pátio de São Pedro'
 
 
-with open('./data/capitaisdist.csv', 'r', encoding='utf-8') as arquivo:
+with open('page/data/capitaisdist.csv', 'r', encoding='utf-8') as arquivo:
     f = arquivo.readlines()
 
 city = []
